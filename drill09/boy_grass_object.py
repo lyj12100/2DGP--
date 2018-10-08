@@ -61,8 +61,8 @@ def handle_events():
 # initialization code
 
 open_canvas()
-num = 10
-Bball = [Big_Ball() for i in range(random.randint(5,15))]
+
+Bball = [Big_Ball() for i in range(10)]
 Sball = [Small_Ball() for a in range(10)]
 team = [Boy() for b in range(11)]
 grass = Grass()
