@@ -37,10 +37,12 @@ def handle_events():
 
 def draw():
     clear_canvas()
-   
-    image.clip_draw(250, 250, 400, 400, 400, 400)
+    main_state.draw()
+    if time < 1:
+        image.clip_draw(250, 250, 400, 400, 400, 400)
     update_canvas()
     
 def update():
-
+    global time
+    time = (time+0.05)%2
     pass
